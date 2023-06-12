@@ -89,6 +89,7 @@ openssl req -x509 -newkey rsa:4096 -keyout server.key -out server.crt -days 365 
 ```
 notice that crt and key files are added to .gitignore
 
+first commit
 
 ## postgres from ansible-galaxy
 install postgresql role
