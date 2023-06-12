@@ -1,2 +1,2 @@
 ansible_python_interpreter: /usr/bin/python3
-user_name: vagrant
+user_name: azureuser
