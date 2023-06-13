@@ -68,9 +68,9 @@
       login_host: 'localhost'
       login_user: 'root'
       login_password: "{{mysql_root_password}}"
-      name: demo
-      password: demo
-      priv: demo.*:ALL
+      name: db_user
+      password: pass123
+      priv: db_user.*:ALL
       host: '%'
       state: present
 
