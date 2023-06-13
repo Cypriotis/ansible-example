@@ -52,6 +52,17 @@
       name: "{{ deb_mysql_python_package }}"
       state: present
       update_cache: yes
+  
+  - name: create demo user
+    mysql_user:
+      login_host: 'localhost'
+      login_user: 'db_user'
+      login_password: "{{mysql_root_password}}"
+      name: django_Test
+      password: pass123456
+      priv: demo.*:ALL
+      host: '%'
+      state: present
 
   - name: create demo database
     mysql_db:
