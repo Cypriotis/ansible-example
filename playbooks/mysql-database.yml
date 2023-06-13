@@ -66,10 +66,10 @@
   - name: create demo user
     mysql_user:
       login_host: 'localhost'
-      login_user: 'db_user'
+      login_user: 'root'
       login_password: "{{mysql_root_password}}"
-      name: django_Test
-      password: pass123456
+      name: demo
+      password: demo
       priv: demo.*:ALL
       host: '%'
       state: present
