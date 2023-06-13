@@ -82,10 +82,10 @@
       state: present
   
   - name: Install libmysqlclient-dev package
-      package:
-        name: libmysqlclient-dev
-        state: present
-      become: yes
+    package:
+      name: libmysqlclient-dev
+      state: present
+    become: yes
 
   - name: install and activate virtual environment
     block:
