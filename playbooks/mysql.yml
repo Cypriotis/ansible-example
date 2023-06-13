@@ -1,4 +1,4 @@
-- hosts: db
+- hosts: db01
   roles:
     - role: geerlingguy.mysql
       become: yes
