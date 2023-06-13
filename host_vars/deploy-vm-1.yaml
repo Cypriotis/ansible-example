@@ -9,7 +9,7 @@ djangoservice:
 django:
   env:
     SECRET_KEY: 'sfvgbrh212131'
-    DATABASE_URL: 'mysql://db_user:pass123456@localhost:3308/django_Test'
+    DATABASE_URL: 'mysql://db_user:pass123@localhost:3308/django_Test'
 
 user_name: azureuser
 app_port: 8000
