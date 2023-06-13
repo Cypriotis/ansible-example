@@ -80,6 +80,12 @@
       regexp: "^ALLOWED_HOSTS ="
       line: "ALLOWED_HOSTS = {{ ansible_all_ipv4_addresses + [public_ip.json.ip]}}"
       state: present
+  
+  - name: Install libmysqlclient-dev package
+      package:
+        name: libmysqlclient-dev
+        state: present
+      become: yes
 
   - name: install and activate virtual environment
     block:
