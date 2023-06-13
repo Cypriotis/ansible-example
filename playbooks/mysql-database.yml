@@ -56,19 +56,19 @@
   - name: create demo database
     mysql_db:
       login_host: 'localhost'
-      login_user: 'root'
+      login_user: 'db_user'
       login_password: "{{mysql_root_password}}"
-      name: demo
+      name: django_Test
       state: present
 
 
   - name: create demo user
     mysql_user:
       login_host: 'localhost'
-      login_user: 'root'
+      login_user: 'db_user'
       login_password: "{{mysql_root_password}}"
-      name: demo
-      password: demo
+      name: django_Test
+      password: pass123456
       priv: demo.*:ALL
       host: '%'
       state: present
